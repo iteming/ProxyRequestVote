@@ -57,14 +57,14 @@ PROXY_NUMBER_MIN = 0
 
 
 # 定义 TESTER 执行周期, 每 CYCLE_TESTER 秒执行一次
-CYCLE_TESTER = env.int('CYCLE_TESTER', 40) # 两次请求间隔
+CYCLE_TESTER = env.int('CYCLE_TESTER', 30) # 两次请求间隔
 # 定义 GETTER 执行周期, 每 CYCLE_GETTER 秒执行一次
 CYCLE_GETTER = env.int('CYCLE_GETTER', 100)
 # 定义 GET 方法的请求超时时长，单位秒
 GET_TIMEOUT = env.int('GET_TIMEOUT', 10) # 单次请求超时时间
 
 # 本次投票总数量
-TUPLE_NUM = env.int('TUPLE_NUM', 350)
+TUPLE_NUM = env.int('TUPLE_NUM', 800)
 
 # 定义 测试URL 以该URL来测试连通率，进行加减分数
 TEST_URL = env.str('TEST_URL', 'https://www.baidu.com')

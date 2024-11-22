@@ -91,9 +91,9 @@ def crawl(url, proxy, int_count):
         if is_json(response_text) & is_json(response_text_proxy):
             text = json.loads(response_text)
             text_proxy = json.loads(response_text_proxy)
-            if TEST_ANONYMOUS & (text['origin'] == text_proxy['origin']):
-                print(f' 非高匿名ip，越过 {response_text_proxy}')
-                return (f'非高匿名ip，越过 {response_text_proxy}')
+            # if TEST_ANONYMOUS & (text['origin'] == text_proxy['origin']):
+            #     print(f' 非高匿名ip，越过 {response_text_proxy}')
+            #     return (f'非高匿名ip，越过 {response_text_proxy}')
         else:
             return (f' 有响应非 json ')
 
